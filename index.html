@@ -1967,12 +1967,11 @@
                     <div class="payment-icon">💳</div>
                     <h3 class="payment-title">Anzahlung erforderlich</h3>
                     <div class="payment-amount">50€</div>
-                    <div class="payment-test-badge">🧪 TEST: 0,01€</div>
+                    <div class="payment-test-badge">🧪 Anzahlung 50€</div>
                     <div class="payment-methods">
-                        <span class="pay-method">💳 Kreditkarte</span>
+                        <span class="pay-method">
                         <span class="pay-method">🅿️ PayPal</span>
-                        <span class="pay-method">🍎 Apple Pay</span>
-                    </div>
+                        <span class="pay-method">
                     <div class="payment-note">
                         ✓ Sichere Zahlung via PayPal<br>
                         ✓ Wird auf den Gesamtpreis angerechnet<br>
@@ -2044,7 +2043,7 @@
                     <img src="img2.jpg" alt="Crew">
                     <div class="gallery-overlay">
                         <span class="gallery-label">PRODUCRD 
-                        BY CALI 💯</span>
+                        BY CROSSEDBONES 💯</span>
                     </div>
                 </a>
                 <a href="https://open.spotify.com/intl-de/track/0fbN71M0JHY7WNi6vF7DUG?si=0800c21471c34f10" target="_blank" class="gallery-item">
@@ -2081,7 +2080,7 @@
                         <img src="logo_wei.png" alt="wahllaichhabbock">
                     </div>
                     <div class="muso-info">
-                        <h2 class="muso-name">CALI</h2>
+                        <h2 class="muso-name">CROSSEDBONES</h2>
                         <p class="muso-role">Engineer, Artist, Songwriter</p>
                     </div>
                 </div>
@@ -2189,7 +2188,7 @@
 
             const waText = `🎙️ *NEUE STUDIO BUCHUNG!*\n\n👤 *Name:* ${name}\n📧 *Email:* ${email}\n📱 *Telefon:* ${phone || 'Keine'}\n📅 *Datum:* ${date}\n🕐 *Uhrzeit:* ${time} Uhr\n🎵 *Session:* ${sessionType}\n💬 *Nachricht:* ${message || 'Keine'}\n\n💳 Anzahlung 0,01€ TEST wird bezahlt!`;
             const waUrl = `https://wa.me/+4917661295301?text=${encodeURIComponent(waText)}`;
-            const ppUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=Info@crossedbones-studio.de&item_name=${encodeURIComponent('Studio Session - ' + name + ' - ' + date)}&amount=0.01&currency_code=EUR&no_note=0`;
+            const ppUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=Info@crossedbones-studio.de&item_name=${encodeURIComponent('Studio Session - ' + name + ' - ' + date)}&amount=50&currency_code=EUR&no_note=0`;
 
             document.getElementById('whatsappBtn').href = waUrl;
             document.getElementById('paypalBtn').href = ppUrl;
